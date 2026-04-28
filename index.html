@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATRIX MUSIC | Experience the Sound</title>
+    <style>
+        /* Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #000000;
+            color: #ffffff;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Navigation */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 10%;
+            background: rgba(0, 0, 0, 0.9);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid #1a1a1a;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ff5500;
+            letter-spacing: 2px;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+        }
+
+        .nav-links li {
+            margin-left: 30px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #b3b3b3;
+            transition: 0.3s;
+            font-weight: 500;
+        }
+
+        .nav-links a:hover {
+            color: #ff5500;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: radial-gradient(circle at center, #1a0d00 0%, #000000 70%);
+            padding: 0 20px;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            margin-bottom: 10px;
+            background: linear-gradient(to right, #ff5500, #ffae00);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: #b3b3b3;
+            max-width: 600px;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            padding: 15px 40px;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: 0.3s;
+        }
+
+        .btn-primary {
+            background-color: #ff5500;
+            color: white;
+            box-shadow: 0 0 20px rgba(255, 85, 0, 0.4);
+        }
+
+        .btn-primary:hover {
+            background-color: #e64d00;
+            transform: translateY(-3px);
+        }
+
+        /* Features Section */
+        .features {
+            padding: 100px 10%;
+            background-color: #0a0a0a;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background-color: #121212;
+            padding: 40px;
+            border-radius: 20px;
+            border: 1px solid #1a1a1a;
+            transition: 0.3s;
+            text-align: center;
+        }
+
+        .card:hover {
+            border-color: #ff5500;
+            transform: translateY(-10px);
+        }
+
+        .card h3 {
+            color: #ff5500;
+            margin-bottom: 15px;
+            font-size: 22px;
+        }
+
+        .card p {
+            color: #b3b3b3;
+        }
+
+        /* Footer */
+        footer {
+            padding: 50px 10%;
+            text-align: center;
+            border-top: 1px solid #1a1a1a;
+            color: #444;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.5rem; }
+            .nav-links { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">ATRIX MUSIC</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#download">Download</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero" id="home">
+        <h1>Music Without Limits</h1>
+        <p>A fast, sleek, and high-quality desktop music player powered by Atrix Engine. Search, Play, and Build your library.</p>
+        <a href="#download" class="btn btn-primary">Download Now</a>
+    </section>
+
+    <section class="features" id="features">
+        <div class="card">
+            <h3>Cloud Search</h3>
+            <p>Instantly search millions of tracks via YouTube DL integration directly from the app.</p>
+        </div>
+        <div class="card">
+            <h3>Visual Experience</h3>
+            <p>Automatic album art fetching for every track. See the music as you hear it.</p>
+        </div>
+        <div class="card">
+            <h3>Atrix Library</h3>
+            <p>Save your favorite tracks to your local library. They stay there even after you close the app.</p>
+        </div>
+        <div class="card">
+            <h3>Clean UI</h3>
+            <p>Dark mode by default. Minimalist controls designed for maximum focus on the sound.</p>
+        </div>
+    </section>
+
+    <section class="hero" id="download" style="height: 50vh;">
+        <h2 style="font-size: 2.5rem; margin-bottom: 20px;">Ready to Listen?</h2>
+        <p>Get the latest version of Atrix Music Elite for Windows.</p>
+        <a href="#" class="btn btn-primary">Download for Windows (.exe)</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 ATRIX MUSIC. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
